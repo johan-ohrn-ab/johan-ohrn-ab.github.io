@@ -70,7 +70,7 @@ export default function Home() {
           subtitle="Swedish Television Channel · Frontend developer"
         />
         <Project
-          link="https://www.nordddb.se"
+          link="https://www.nordddb.com"
           image="/project-nordddb.jpg"
           title="NORDDDB.se"
           subtitle="Advertising agency · Frontend developer"
