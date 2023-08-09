@@ -51,8 +51,8 @@ export default function Home() {
           <span className="absolute bottom-0 left-0 text-4xl -m-2">👋</span>
         </div>
         <h1 className="text-2xl font-medium leading-relaxed sm:text-3xl sm:leading-relaxed">
-          I'm Johan, a creative frontend developer based in Stockholm, with a
-          focus on UI/UX and a love of all things digital.
+          I'm Johan, a frontend developer that enjoys developing user interfaces
+          for the web.
         </h1>
       </Header>
       <Section>
@@ -79,7 +79,8 @@ export default function Home() {
       <Section>
         <SectionHeading>Biography</SectionHeading>
         <SectionText>
-          I'm Johan, a fronted developer and consultant in Stockholm.
+          I'm Johan, a fronted developer and freelance consultant based in
+          Stockholm.
         </SectionText>
         <SectionText>
           After my graduation I knew exactly that I wanted to start working with
@@ -88,9 +89,9 @@ export default function Home() {
           interactive websites for numerous high-profile clients.
         </SectionText>
         <SectionText>
-          Today, I'm a consultant and the co-founder of Rymdtiden — a close-knit
-          collective of developers that aim to help our clients with web and
-          application development.
+          Today, I'm a freelance consultant and the co-founder of Rymdtiden — a
+          close-knit collective of developers that aim to help our clients with
+          web development.
         </SectionText>
       </Section>
       <div className="flex flex-row gap-4">
