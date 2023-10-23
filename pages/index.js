@@ -9,7 +9,7 @@ const Section = ({ children }) => (
 );
 
 const SectionHeading = ({ children }) => (
-  <h2 className="text-stone-500">{children}</h2>
+  <h2 className="text-neutral-500">{children}</h2>
 );
 
 const SectionText = ({ children }) => (
@@ -31,7 +31,7 @@ const Project = ({ link, image, title, subtitle }) => (
     />
     <div>
       <p className="text-lg">{title}</p>
-      <p className="text-stone-600">{subtitle}</p>
+      <p className="text-neutral-600">{subtitle}</p>
     </div>
   </a>
 );
@@ -51,8 +51,8 @@ export default function Home() {
           <span className="absolute bottom-0 left-0 text-4xl -m-2">👋</span>
         </div>
         <h1 className="text-2xl font-medium leading-relaxed sm:text-3xl sm:leading-relaxed">
-          I'm Johan, a frontend developer that enjoys developing user interfaces
-          for the web.
+          Hello! I'm Johan, a seasoned Frontend Developer Consultant with a
+          passion for crafting delightful digital experiences.
         </h1>
       </Header>
       <Section>
@@ -77,21 +77,36 @@ export default function Home() {
         />
       </Section>
       <Section>
-        <SectionHeading>Biography</SectionHeading>
+        <SectionHeading>About</SectionHeading>
         <SectionText>
-          I'm Johan, a fronted developer and freelance consultant based in
-          Stockholm.
+          With a deep understanding of web technologies and a keen eye for
+          design, I specialise in translating complex ideas into user-friendly,
+          visually appealing web applications.
         </SectionText>
         <SectionText>
-          After my graduation I knew exactly that I wanted to start working with
-          web development. I have spent most of my career since then working at
-          award-winning agencies where I've had the privilege of building highly
-          interactive websites for numerous high-profile clients.
+          I've honed my skills in HTML, CSS, JavaScript, and various modern
+          frontend frameworks (such as React and Vue). I've had the privilege of
+          collaborating with a diverse range of clients, from startups to
+          established enterprises, helping them achieve their online goals.
         </SectionText>
         <SectionText>
-          Today, I'm a freelance consultant and the co-founder of Rymdtiden — a
-          close-knit collective of developers that aim to help our clients with
-          web development.
+          I believe that a well-crafted user interface not only enhances a
+          brand's credibility but also improves user engagement. I stay up to
+          date with the latest UI/UX trends, ensuring that my projects are not
+          only visually appealing but also highly functional and responsive.
+        </SectionText>
+        <SectionText>
+          I also bring a strategic mindset to the table. As a consultant, I work
+          closely with clients to understand their business objectives, and I
+          offer tailored solutions that align with their goals. Whether it's
+          optimising performance, improving accessibility, or enhancing
+          cross-browser compatibility.
+        </SectionText>
+        <SectionText>
+          I love to stay informed about emerging technologies and best practices
+          in the frontend development landscape. Continuous learning is key to
+          staying ahead in this fast-paced field, and I thrive on the challenges
+          it presents.
         </SectionText>
       </Section>
       <div className="flex flex-row gap-4">
