@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 html {
-  color: theme("colors.stone.300");
-  background: theme("colors.stone.900");
+  color: theme("colors.neutral.100");
+  background: theme("colors.neutral.900");
 }
