@@ -56,23 +56,29 @@ export default function Home() {
         </h1>
       </Header>
       <Section>
-        <SectionHeading>Projects</SectionHeading>
+        <SectionHeading>Recent work</SectionHeading>
+        <Project
+          link="https://fakturisera.surge.sh"
+          image="/project-fakturisera.jpg"
+          title="Fakturisera"
+          subtitle="Invoice tool · Co-founder & Frontend developer"
+        />
         <Project
           link="https://www.rymdtiden.se"
           image="/project-rymdtiden.jpg"
-          title="Rymdtiden.se"
+          title="Rymdtiden"
           subtitle="Web production agency · Co-founder & Frontend developer"
         />
         <Project
           link="https://www.kunskapskanalen.se"
           image="/project-kunskapskanalen.jpg"
-          title="Kunskapskanalen.se"
+          title="Kunskapskanalen"
           subtitle="Swedish Television Channel · Frontend developer"
         />
         <Project
           link="https://www.nordddb.com"
           image="/project-nordddb.jpg"
-          title="NORDDDB.se"
+          title="NORDDDB"
           subtitle="Advertising agency · Frontend developer"
         />
       </Section>
