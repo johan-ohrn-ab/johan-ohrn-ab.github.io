@@ -9,7 +9,7 @@ const Section = ({ children }) => (
 );
 
 const SectionHeading = ({ children }) => (
-  <h2 className="text-neutral-500">{children}</h2>
+  <h2 className="text-neutral-500 font-medium">{children}</h2>
 );
 
 const SectionText = ({ children }) => (
@@ -17,23 +17,25 @@ const SectionText = ({ children }) => (
 );
 
 const Project = ({ link, image, title, subtitle }) => (
-  <a
-    href={link}
-    target="_blank"
-    className="flex flex-row gap-x-4 items-center sm:gap-x-8"
-  >
-    <img
-      className="rounded-lg w-16"
-      src={image}
-      width="512"
-      height="512"
-      alt=""
-    />
+  <div className="flex flex-row gap-x-4 items-center sm:gap-x-8">
+    <a href={link} target="_blank" className="flex shrink-0">
+      <img
+        className="rounded-lg w-16"
+        src={image}
+        width="512"
+        height="512"
+        alt=""
+      />
+    </a>
     <div>
-      <p className="text-lg">{title}</p>
-      <p className="text-neutral-600">{subtitle}</p>
+      <p className="text-lg">
+        <a href={link} target="_blank">
+          {title}
+        </a>
+      </p>
+      <p className="text-neutral-500">{subtitle}</p>
     </div>
-  </a>
+  </div>
 );
 
 export default function Home() {
@@ -56,18 +58,18 @@ export default function Home() {
         </h1>
       </Header>
       <Section>
-        <SectionHeading>Recent work</SectionHeading>
+        <SectionHeading>Selected projects</SectionHeading>
         <Project
-          link="https://fakturisera.surge.sh"
+          link="https://www.fakturisera.se"
           image="/project-fakturisera.jpg"
           title="Fakturisera"
-          subtitle="Invoice tool · Co-founder & Frontend developer"
+          subtitle="Invoice tool · Founder & Frontend developer"
         />
         <Project
-          link="https://www.rymdtiden.se"
-          image="/project-rymdtiden.jpg"
-          title="Rymdtiden"
-          subtitle="Web production agency · Co-founder & Frontend developer"
+          link="https://trokeeps.surge.sh"
+          image="/project-trokeeps.jpg"
+          title="Trokeeps"
+          subtitle="Maze game · Frontend developer"
         />
         <Project
           link="https://www.kunskapskanalen.se"
@@ -123,6 +125,39 @@ export default function Home() {
           <LinkedIn />
         </a>
       </div>
+      <Section>
+        <SectionHeading>Also</SectionHeading>
+        <SectionText>
+          I am proud to be a part of a dynamic collective of web developers
+          known as Rymdtiden.
+        </SectionText>
+        <SectionText>
+          Our team is driven by a shared passion for web development and a
+          commitment to pushing the boundaries of what's possible on the
+          internet.
+        </SectionText>
+        <SectionText>
+          Together, we collaborate on innovative projects, tackle complex
+          challenges, and constantly seek new ways to enhance the online
+          experience for our clients and users.
+        </SectionText>
+        <SectionText>
+          As a member of Rymdtiden, I am excited to be part of a community that
+          is dedicated to shaping the digital landscape and creating the future
+          of the web.
+        </SectionText>
+        <Project
+          link="https://www.rymdtiden.se"
+          image="/project-rymdtiden.jpg"
+          title="Rymdtiden"
+          subtitle="www.rymdtiden.se"
+        />
+      </Section>
+      <footer>
+        <p className="text-neutral-600 text-xs">
+          © Johan Öhrn AB. Copyright {new Date().getFullYear()}.
+        </p>
+      </footer>
     </main>
   );
 }

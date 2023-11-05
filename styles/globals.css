@@ -3,6 +3,5 @@
 @tailwind utilities;
 
 html {
-  color: theme("colors.neutral.100");
-  background: theme("colors.neutral.900");
+  @apply bg-neutral-900 text-neutral-300;
 }
